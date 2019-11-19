@@ -75,12 +75,12 @@ Putting together:
 
   Step 1: Create the __route & http request__ in the file config/routes.rb
   ```
-  get '/about' => 'statics#about'
+  get '/game/:guess' => 'main#game'
   ```
 
   Step 2: Create the ____action "about"____ in the file ____app/controllers/statics.rb____
   ```
-  class ____Static____ < ApplicationController
+  class ___StaticsController___ < ApplicationController
     def ____about____
       render _____'about'______
     end
